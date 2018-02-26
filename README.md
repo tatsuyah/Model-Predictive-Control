@@ -15,6 +15,8 @@ For autonomous vehicle, control input means steering wheel and throttle(and brea
 
 ## Kinematic model equations
 
+Kinematic model handles several status: car's x, y position, orientation, velocity, cross track error(= cte: distance between reference trajectory and actual trajectory), orientation error(= epsi: difference between desired orientation and current orientation). And belows are equations to calculate those at next timestep.
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=x_{t&plus;1}&space;=&space;x_{t}&space;&plus;&space;v_{t}&space;*&space;cos(\psi_{t})&space;*&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{t&plus;1}&space;=&space;x_{t}&space;&plus;&space;v_{t}&space;*&space;cos(\psi_{t})&space;*&space;dt" title="x_{t+1} = x_{t} + v_{t} * cos(\psi_{t}) * dt" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t&plus;1}&space;=&space;y_{t}&space;&plus;&space;v_{t}&space;*&space;sin(\psi_{t})&space;*&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t&plus;1}&space;=&space;y_{t}&space;&plus;&space;v_{t}&space;*&space;sin(\psi_{t})&space;*&space;dt" title="y_{t+1} = y_{t} + v_{t} * sin(\psi_{t}) * dt" /></a>
