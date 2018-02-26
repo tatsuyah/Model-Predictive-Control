@@ -1,0 +1,10 @@
+.vscode
+build
+tags
+.editorconfig
+.DS_Store
+Ipopt-3.12.*
+openmpi-3.0.0
+resources
+src-runnable
+jeremy
